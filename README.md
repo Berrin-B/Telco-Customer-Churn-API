@@ -119,7 +119,15 @@ The project includes multiple machine learning experiments for customer churn pr
 
 ### Final Selected Model
 
-> 🔧 *Final production model details (XGBoost) will be documented here.*
+After evaluating various classification algorithms, XGBoost (eXtreme Gradient Boosting) was selected as the final model for this project. 
+
+Key reasons for this selection include:
+
+Predictive Performance: The XGBoost model demonstrated the highest accuracy and F1-score during the validation phase compared to alternative models like SVM.
+
+Efficiency: It provides robust performance with faster training times and efficient memory usage, making it ideal for deployment in an API environment.
+
+Hyperparameter Tuning: The model was fine-tuned to effectively handle potential class imbalances, ensuring a balanced precision-recall trade-off which is critical for churn prediction.
 
 ### Comparative Model Experiments
 
@@ -133,7 +141,7 @@ Alongside the final production model selected for deployment, additional classif
 | Logistic Regression | Interpretable linear classifier |
 | Logistic Regression + SMOTE | Imbalance-aware resampled model |
 | Random Forest (Balanced) | Ensemble-based benchmark model |
-
+| XGBoost| High-performance gradient boosting classifier |
 #### Optimization Techniques
 
 The experimentation process included several model improvement strategies:
